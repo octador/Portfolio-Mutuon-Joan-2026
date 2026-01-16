@@ -14,25 +14,22 @@
 // ==========================================
 // NAVIGATION RESPONSIVE
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Éléments DOM
     const navToggle = document.getElementById('navToggle');
-    const navLists = document.querySelectorAll('#navList');
+    const navDesktop = document.querySelector('.hidden.md\\:flex') || document.getElementById('navListDesktop');
+    const navMobile = document.getElementById('navListMobile');
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Toggle du menu mobile
-    if (navToggle) {
-        navToggle.addEventListener('click', function() {
+    if (navToggle && navMobile) {
+        navToggle.addEventListener('click', function () {
             // Basculer la classe active
             navToggle.classList.toggle('active');
 
-            // Basculer l'affichage des menus mobiles
-            navLists.forEach(navList => {
-                if (window.innerWidth < 768) {
-                    navList.classList.toggle('hidden');
-                    navList.classList.toggle('flex');
-                }
-            });
+            // Basculer l'affichage du menu mobile
+            navMobile.classList.toggle('hidden');
+            navMobile.classList.toggle('flex');
 
             // Mettre à jour l'attribut ARIA
             const isExpanded = navToggle.classList.contains('active');
@@ -40,38 +37,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Fermer le menu lors du clic sur un lien
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
+        const mobileLinks = navMobile.querySelectorAll('.nav-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function () {
                 navToggle.classList.remove('active');
-
-                // Fermer les menus mobiles
-                navLists.forEach(navList => {
-                    if (window.innerWidth < 768) {
-                        navList.classList.add('hidden');
-                        navList.classList.remove('flex');
-                    }
-                });
-
+                navMobile.classList.add('hidden');
+                navMobile.classList.remove('flex');
                 navToggle.setAttribute('aria-expanded', 'false');
             });
         });
 
         // Fermer le menu lors du clic en dehors
-        document.addEventListener('click', function(event) {
-            const isClickInsideNav = Array.from(navLists).some(navList =>
-                navList.contains(event.target)
-            ) || navToggle.contains(event.target);
+        document.addEventListener('click', function (event) {
+            const isClickInsideNav = navMobile.contains(event.target) || navToggle.contains(event.target);
 
             if (!isClickInsideNav && navToggle.classList.contains('active')) {
                 navToggle.classList.remove('active');
-
-                navLists.forEach(navList => {
-                    if (window.innerWidth < 768) {
-                        navList.classList.add('hidden');
-                        navList.classList.remove('flex');
-                    }
-                });
-
+                navMobile.classList.add('hidden');
+                navMobile.classList.remove('flex');
                 navToggle.setAttribute('aria-expanded', 'false');
             }
         });
@@ -81,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // ANIMATION DU HEADER AU SCROLL
 // ==========================================
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const header = document.getElementById('header');
-    
+
     if (header) {
         // Ajouter la classe 'scrolled' si on a dépassé 50px
         if (window.scrollY > 50) {
@@ -97,7 +80,7 @@ window.addEventListener('scroll', function() {
 // ==========================================
 // VALIDATION DU FORMULAIRE DE CONTACT
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     const successMessage = document.getElementById('successMessage');
     const errorMessage = document.getElementById('errorMessage');
@@ -149,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Validation en temps réel lors de la saisie
     const formInputs = contactForm ? contactForm.querySelectorAll('input, textarea') : [];
     formInputs.forEach(input => {
-        input.addEventListener('blur', function() {
+        input.addEventListener('blur', function () {
             validateField(input);
         });
 
-        input.addEventListener('input', function() {
+        input.addEventListener('input', function () {
             // Retirer l'erreur dès que l'utilisateur commence à corriger
             input.classList.remove('error');
             const errorElement = document.getElementById(input.id + 'Error');
@@ -165,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Soumission du formulaire
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Cacher les messages précédents
@@ -192,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 // Simulation d'un délai d'envoi (à remplacer par une vraie soumission)
-                setTimeout(function() {
+                setTimeout(function () {
                     // Réinitialiser le formulaire
                     contactForm.reset();
 
@@ -233,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // ANIMATION DES BARRES DE PROGRESSION
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Fonction pour animer les barres de progression
     function animateSkillBars() {
         const skillBars = document.querySelectorAll('.skill-progress');
@@ -269,9 +252,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // MISE À JOUR DE L'ANNÉE COURANTE
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const currentYearElement = document.getElementById('currentYear');
-    
+
     if (currentYearElement) {
         const currentYear = new Date().getFullYear();
         currentYearElement.textContent = currentYear;
@@ -281,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // ANIMATIONS D'APPARITION AU SCROLL
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Sélectionner tous les éléments à animer
     const animatedElements = document.querySelectorAll('.card, .section');
 
@@ -319,13 +302,13 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // SMOOTH SCROLL POUR LES LIENS ANCRE
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             const targetId = this.getAttribute('href');
-            
+
             // Ignorer si c'est juste "#"
             if (targetId === '#') {
                 event.preventDefault();
@@ -336,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (targetElement) {
                 event.preventDefault();
-                
+
                 const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -353,19 +336,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // ==========================================
 // GESTION DU FOCUS VISIBILITÉ ACCESSIBILITÉ
 // ==========================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Améliorer l'accessibilité en gérant le focus
     const focusableElements = 'a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])';
-    
+
     // Ajouter une classe lors du focus
-    document.addEventListener('focusin', function(event) {
+    document.addEventListener('focusin', function (event) {
         const element = event.target;
         if (element.matches(focusableElements)) {
             element.classList.add('is-focused');
         }
     });
 
-    document.addEventListener('focusout', function(event) {
+    document.addEventListener('focusout', function (event) {
         const element = event.target;
         if (element.matches(focusableElements)) {
             element.classList.remove('is-focused');
