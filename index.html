@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio professionnel de Joan Mutuon - Développeur Web. Spécialiste en HTML, CSS, JavaScript et responsive design.">
+    <meta name="keywords" content="Joan Mutuon, développeur web, portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Joan Mutuon">
+    <meta name="robots" content="index, follow">
+
+    <!-- Titre de la page -->
+    <title>Joan Mutuon - Développeur Web | Portfolio Professionnel</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2d3748',
+                            light: '#4a5568',
+                            dark: '#1a202c',
+                        },
+                        secondary: {
+                            DEFAULT: '#718096',
+                            light: '#a0aec0',
+                        },
+                        accent: {
+                            DEFAULT: '#38b2ac',
+                            light: '#4fd1c5',
+                            dark: '#319795',
+                        },
+                        success: '#48bb78',
+                        error: '#f56565',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease',
+                        'slide-down': 'slideDown 0.3s ease',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
+
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800 bg-white antialiased">
+    <!-- ==========================================
+         NAVIGATION
+         ========================================== -->
+    <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
+            <!-- Logo -->
+            <a href="index.html"
+                class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
+                aria-label="Retour à l'accueil">
+                Joan Mutuon
+            </a>
+
+            <!-- Menu hamburger (mobile) -->
+            <button id="navToggle" class="nav-toggle hidden flex-col gap-[5px] p-[5px]" aria-label="Menu de navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu de navigation -->
+            <ul id="navList" class="hidden md:flex gap-6">
+                <li>
+                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                        aria-current="page">Accueil</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
+                </li>
+                <li>
+                    <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <ul id="navList"
+            class="md:hidden hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg gap-4">
+            <li>
+                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                    aria-current="page">Accueil</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
+            </li>
+            <li>
+                <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
+            </li>
+            <li>
+                <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- ==========================================
+         CONTENU PRINCIPAL
+         ========================================== -->
+    <main>
+        <!-- Section Hero -->
+        <section aria-labelledby="hero-title"
+            class="min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-gray-50 to-white py-12">
+            <div class="container mx-auto px-4 text-center max-w-[800px]">
+                <h1 id="hero-title" class="text-[3.5rem] font-bold text-gray-800 mb-4 animate-fade-in-up">
+                    Joan Mutuon
+                </h1>
+
+                <p class="text-[1.5rem] text-gray-600 mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    Développeur Web
+                </p>
+
+                <p class="text-[1.125rem] text-gray-600 mb-12 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    Je conçois et développe des applications à forte valeur ajoutée, en privilégiant des architectures
+                    claires, scalables et orientées performance, tout en assurant une expérience utilisateur optimale,
+                    un code maintenable et des solutions adaptées aux besoins métier.
+                </p>
+
+                <div class="inline-flex gap-4 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="projects.html"
+                        class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                        Voir mes projets
+                    </a>
+                    <a href="contact.html"
+                        class="px-6 py-2 bg-transparent text-gray-800 font-medium rounded-lg border-2 border-gray-800 hover:bg-gray-800 hover:text-white hover:-translate-y-0.5 transition-all duration-300">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Présentation rapide -->
+        <section aria-labelledby="intro-title" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-[1200px]">
+                <h2 id="intro-title" class="text-center text-3xl font-bold text-gray-800 mb-12">
+                    Ce que je fais
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Carte 1 -->
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">
+                                Sites Web Sur Mesure
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Création de sites web entièrement personnalisés, adaptés à vos besoins spécifiques et
+                            optimisés pour tous les appareils.
+                        </p>
+                    </article>
+
+                    <!-- Carte 2 -->
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">
+                                Design Responsive
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Développement d'interfaces qui s'adaptent parfaitement à tous les écrans : mobile, tablette
+                            et desktop.
+                        </p>
+                    </article>
+
+                    <!-- Carte 3 -->
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">
+                                Performance & Accessibilité
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sites optimisés pour la vitesse de chargement et accessibles à tous les utilisateurs,
+                            conformément aux normes WCAG.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Aperçu projets -->
+        <section aria-labelledby="preview-title" class="py-16">
+            <div class="container mx-auto px-4 max-w-[1200px]">
+                <h2 id="preview-title" class="text-center text-3xl font-bold text-gray-800 mb-12">
+                    Projets Récents
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Projet 1 -->
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">
+                                E-commerce Moderne
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Site e-commerce complet avec panier dynamique, système de filtrage et interface utilisateur
+                            intuitive.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                        </div>
+                        <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100">
+                            <a href="projects.html"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">
+                                Dashboard Analytics
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Tableau de bord interactif avec graphiques, visualisation de données et interface
+                            responsive.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS
+                                Grid</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">API</span>
+                        </div>
+                        <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100">
+                            <a href="projects.html"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="projects.html"
+                        class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                        Tous mes projets
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="bg-gray-900 text-white py-16 mt-auto">
+        <div class="container mx-auto px-4 max-w-[1200px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Colonne 1: Informations -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
+                    <p class="text-gray-400">
+                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
+                    </p>
+                </div>
+
+                <!-- Colonne 2: Navigation -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
+                    <nav class="flex flex-col gap-2">
+                        <a href="index.html"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
+                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À
+                            propos</a>
+                        <a href="skills.html"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
+                        <a href="projects.html"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
+                        <a href="contact.html"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Colonne 3: Contact -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
+                    <nav class="flex flex-col gap-2">
+                        <a href="mailto:contact@joanmutuon.com"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
+                        <a href="contact.html"
+                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de
+                            contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
+                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+/**
+ * ==========================================
+ * TAILWIND CSS PERSONNALISATIONS
+ * Portfolio Joan Mutuon
+ * ==========================================
+ * Ce fichier contient uniquement les personnalisations
+ * qui ne peuvent pas être faites avec Tailwind via CDN.
+ * ==========================================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ==========================================
+   CONFIGURATION TAILWIND
+   ========================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configuration personnalisée */
+@theme {
+  --color-primary: #2d3748;
+  --color-primary-light: #4a5568;
+  --color-primary-dark: #1a202c;
+  --color-secondary: #718096;
+  --color-secondary-light: #a0aec0;
+  --color-accent: #38b2ac;
+  --color-accent-light: #4fd1c5;
+  --color-accent-dark: #319795;
+  --color-success: #48bb78;
+  --color-error: #f56565;
+  --font-family-base: 'Inter', sans-serif;
+}
+
+/* ==========================================
+   ANIMATIONS PERSONNALISÉES
+   ========================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classes d'animation */
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease;
+}
+
+/* ==========================================
+   NAVIGATION - Link underline animation
+   ========================================== */
+.nav-link {
+  @apply relative transition-colors duration-150;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-[-4px] left-0 h-[2px] bg-teal-500 transition-all duration-150;
+  width: 0;
+}
+
+.nav-link:hover::after,
+.nav-link-active {
+  @apply text-teal-500;
+}
+
+.nav-link-active::after {
+  width: 100%;
+}
+
+/* ==========================================
+   HERO ANIMATIONS DELAYED
+   ========================================== */
+.hero-title {
+  animation-delay: 0s;
+}
+
+.hero-subtitle {
+  animation-delay: 0.2s;
+}
+
+.hero-description {
+  animation-delay: 0.4s;
+}
+
+.hero-cta {
+  animation-delay: 0.6s;
+}
+
+/* ==========================================
+   MOBILE NAV TOGGLE
+   ========================================== */
+.nav-toggle span {
+  @apply block w-[25px] h-[2px] bg-gray-800 transition-all duration-150;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  @apply rotate-45 translate-y-[5px];
+}
+
+.nav-toggle.active span:nth-child(2) {
+  @apply opacity-0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  @apply -rotate-45 translate-y-[-5px];
+}
+
+/* ==========================================
+   HEADER SCROLL EFFECT
+   ========================================== */
+.header.scrolled {
+  @apply shadow-md;
+}
+
+/* ==========================================
+   FORM INPUTS ERROR STATE
+   ========================================== */
+.form-input.error,
+.form-textarea.error {
+  @apply border-red-500;
+}
+
+.form-error.visible {
+  @apply block animate-slideDown;
+}
+
+/* ==========================================
+   MESSAGE VISIBILITY
+   ========================================== */
+.message.visible {
+  @apply block animate-slideDown;
+}
+
+/* ==========================================
+   SKILL PROGRESS BAR
+   ========================================== */
+.skill-progress {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark));
+  transition: width 1s ease;
+}
+
+/* ==========================================
+   TIMELINE
+   ========================================== */
+.timeline-item {
+  @apply flex gap-4 pl-6 border-l-2 border-gray-100 mb-6 relative;
+}
+
+.timeline-item::before {
+  content: '';
+  @apply absolute left-[-7px] top-[5px] w-3 h-3 bg-teal-500 rounded-full;
+}
+
+/* ==========================================
+   ACCESSIBILITY - REDUCED MOTION
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
