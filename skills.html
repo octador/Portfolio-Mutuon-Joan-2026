@@ -5,58 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Découvrez les compétences techniques de Joan Mutuon : HTML, CSS, JavaScript, responsive design et bonnes pratiques web.">
-    <meta name="keywords" content="Joan Mutuon, compétences, HTML, CSS, JavaScript, responsive design, web">
+        content="Liste des compétences techniques de Joan Mutuon — HTML, CSS, Bootstrap, Tailwind, JavaScript, TypeScript, PHP, Symfony, Laravel, Node.js, Next.js, Express, SQL avancée.">
+    <meta name="keywords" content="Joan Mutuon, compétences, HTML, CSS, JavaScript, TypeScript, PHP, Node.js, SQL">
     <meta name="author" content="Joan Mutuon">
-    <meta name="robots" content="index, follow">
 
     <title>Compétences - Joan Mutuon | Développeur Web</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#2d3748',
-                            light: '#4a5568',
-                            dark: '#1a202c',
-                        },
-                        secondary: {
-                            DEFAULT: '#718096',
-                            light: '#a0aec0',
-                        },
-                        accent: {
-                            DEFAULT: '#38b2ac',
-                            light: '#4fd1c5',
-                            dark: '#319795',
-                        },
-                        success: '#48bb78',
-                        error: '#f56565',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 0.8s ease',
-                        'slide-down': 'slideDown 0.3s ease',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        slideDown: {
-                            '0%': { opacity: '0', transform: 'translateY(-10px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                    },
-                },
-            },
-        }
-    </script>
 
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,24 +23,18 @@
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
 
-    <!-- Styles personnalisés -->
+    <!-- Styles personnalisés (optionnel) -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-white antialiased">
-    <!-- ==========================================
-         NAVIGATION
-         ========================================== -->
+    <!-- NAVIGATION -->
     <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
-            <!-- Logo -->
             <a href="index.html"
                 class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
-                aria-label="Retour à l'accueil">
-                Joan Mutuon
-            </a>
+                aria-label="Retour à l'accueil">Joan Mutuon</a>
 
-            <!-- Menu hamburger (mobile) -->
             <button id="navToggle" class="block md:hidden flex flex-col justify-between w-6 h-6 p-1"
                 aria-label="Menu de navigation" aria-expanded="false">
                 <span class="block h-0.5 w-full bg-gray-800"></span>
@@ -92,314 +42,152 @@
                 <span class="block h-0.5 w-full bg-gray-800"></span>
             </button>
 
-            <!-- Menu de navigation -->
             <ul id="navList" class="hidden md:flex gap-6">
-                <li>
-                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
-                        aria-current="page">Accueil</a>
+                <li><a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium">Accueil</a></li>
+                <li><a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a></li>
+                <li><a href="skills.html" class="nav-link text-gray-800 font-medium" aria-current="page">Compétences</a>
                 </li>
-                <li>
-                    <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
-                </li>
-                <li>
-                    <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
-                </li>
-                <li>
-                    <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
-                </li>
+                <li><a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a></li>
+                <li><a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Menu mobile -->
         <ul id="navListMobile"
             class="md:hidden hidden flex flex-col absolute top-full left-0 right-0 bg-white p-4 shadow-lg gap-4">
-
-            <li>
-                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
-                    aria-current="page">Accueil</a>
-            </li>
-            <li>
-                <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
-            </li>
-            <li>
-                <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
-            </li>
-            <li>
-                <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
-            </li>
-            <li>
-                <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
-            </li>
+            <li><a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium">Accueil</a></li>
+            <li><a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a></li>
+            <li><a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a></li>
+            <li><a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a></li>
+            <li><a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a></li>
         </ul>
     </header>
 
-    <!-- ==========================================
-         CONTENU PRINCIPAL
-         ========================================== -->
+    <!-- CONTENU PRINCIPAL -->
     <main>
-        <!-- Section Titre -->
+        <!-- Titre -->
         <section aria-labelledby="page-title" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4 text-center max-w-[1200px]">
-                <h1 id="page-title" class="text-4xl md:text-3xl font-bold text-gray-800 mb-4">Mes compétences</h1>
-                <p class="text-[1.5rem] text-gray-600">Technologies et expertise technique</p>
+                <h1 id="page-title" class="text-4xl md:text-3xl font-bold text-gray-800 mb-4">Compétences
+                </h1>
+                <p class="text-[1.25rem] text-gray-600">Découvrez mes connaissances en technologies, frameworks et
+                    outils.</p>
             </div>
         </section>
 
-        <!-- Section HTML -->
-        <section aria-labelledby="html-title" class="py-16">
+        <!-- Section : Liste des compétences (sans valeurs) -->
+        <section aria-labelledby="tech-title" class="py-12">
             <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="html-title" class="text-3xl font-bold text-gray-800 mb-12">HTML5</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Skill bar 1 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Structure sémantique</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">90%</p>
-                    </article>
-
-                    <!-- Skill bar 2 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Accessibilité (ARIA, WCAG)</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">85%</p>
-                    </article>
-
-                    <!-- Skill bar 3 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Formulaires avancés</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="80"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">80%</p>
-                    </article>
-
-                    <!-- Skill bar 4 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">SEO (SEO on-page)</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="75"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">75%</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section CSS -->
-        <section aria-labelledby="css-title" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="css-title" class="text-3xl font-bold text-gray-800 mb-12">CSS3</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Skill bar 1 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Flexbox & Grid</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">90%</p>
-                    </article>
-
-                    <!-- Skill bar 2 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Animations & Transitions</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">85%</p>
-                    </article>
-
-                    <!-- Skill bar 3 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Responsive Design (Media Queries)</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="95"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">95%</p>
-                    </article>
-
-                    <!-- Skill bar 4 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">CSS Variables & Modern CSS</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">85%</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section JavaScript -->
-        <section aria-labelledby="js-title" class="py-16">
-            <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="js-title" class="text-3xl font-bold text-gray-800 mb-12">JavaScript</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Skill bar 1 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">JavaScript moderne (ES6+)</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">85%</p>
-                    </article>
-
-                    <!-- Skill bar 2 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Manipulation du DOM</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">90%</p>
-                    </article>
-
-                    <!-- Skill bar 3 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Fetch API & Promises</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="75"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">75%</p>
-                    </article>
-
-                    <!-- Skill bar 4 -->
-                    <article
-                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
-                        <h3 class="font-medium text-gray-800">Validation de formulaires</h3>
-                        <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
-                        </div>
-                        <p class="text-sm text-gray-600 text-right">85%</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Compétences supplémentaires -->
-        <section aria-labelledby="additional-title" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="additional-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Autres compétences
-                </h2>
+                <h2 id="tech-title" class="text-3xl font-bold text-gray-800 mb-8">Compétences techniques</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Carte 1 -->
-                    <article
-                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">
-                                Responsive Design
-                            </h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed mb-4">
-                            Conception d'interfaces adaptées à tous les écrans, du mobile au desktop, avec une attention
-                            particulière à l'expérience utilisateur.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Mobile-first</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Breakpoints</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Touch-friendly</span>
-                        </div>
+                    <!-- Frontend -->
+                    <article class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Frontend</h3>
+                        <ul class="list-none space-y-3">
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">HTML</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">CSS</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">Bootstrap</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">Tailwind
+                                    CSS</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">JavaScript</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">TypeScript</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-sm font-medium">Next.js</span>
+                            </li>
+                        </ul>
                     </article>
 
-                    <!-- Carte 2 -->
-                    <article
-                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">
-                                Bonnes Pratiques Web
-                            </h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed mb-4">
-                            Respect des standards du web, optimisation des performances et accessibilité pour tous les
-                            utilisateurs.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">WCAG</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Sémantique</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Performance</span>
-                        </div>
+                    <!-- Backend -->
+                    <article class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Backend</h3>
+                        <ul class="list-none space-y-3">
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">Node.js</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">Express</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">PHP</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">Symfony</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">Laravel</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">SQL
+                                    avancée</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium">Python
+                                    (notions – scripting)</span></li>
+                        </ul>
                     </article>
 
-                    <!-- Carte 3 -->
-                    <article
-                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-semibold text-gray-800">
-                                Outils de Développement
-                            </h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed mb-4">
-                            Utilisation des outils modernes pour un développement efficace et professionnel.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Git</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">VS
-                                Code</span>
-                            <span
-                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">DevTools</span>
-                        </div>
+                    <!-- Outils & Autres -->
+                    <article class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Outils & Bonnes pratiques</h3>
+                        <ul class="list-none space-y-3">
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Architecture
+                                    REST / APIs</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Gestion
+                                    de versions (Git)</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Tests
+                                    & Debug</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Performance
+                                    & Accessibilité</span></li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Docker</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">CI/CD</span>
+                            </li>
+                            <li><span
+                                    class="inline-block px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Dossier
+                                    de conception</span></li>
+                        </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Section CTA -->
-        <section class="py-16 text-center">
+        <!-- CTA -->
+        <section class="py-12 text-center">
             <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">Vous avez un projet ?</h2>
-                <p class="text-gray-600 mb-8">
-                    Mettons mes compétences au service de votre projet web. N'hésitez pas à me contacter !
-                </p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Vous avez un projet ?</h2>
+                <p class="text-gray-600 mb-6">Mettons ces compétences au service de votre projet web. Contactez-moi.</p>
                 <a href="contact.html"
-                    class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
-                    Discutons de votre projet
-                </a>
+                    class="inline-block px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 transition">Contact</a>
             </div>
         </section>
     </main>
 
-    <!-- ==========================================
-         FOOTER
-         ========================================== -->
+    <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-400 mt-auto">
         <div class="max-w-[1200px] mx-auto px-4 py-8">
             <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-
-                <!-- Identité -->
                 <div class="text-center md:text-left">
                     <p class="text-white font-semibold">Joan Mutuon</p>
                     <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Navigation -->
                 <nav class="flex justify-center gap-4 text-sm flex-wrap">
                     <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
                     <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
@@ -407,24 +195,31 @@
                     <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
                 </nav>
 
-                <!-- Contact -->
                 <div class="text-center md:text-right text-sm">
-                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
-                        contact@joanmutuon.com
-                    </a>
+                    <a href="mailto:contact@joanmutuon.com"
+                        class="hover:text-teal-500 transition">contact@joanmutuon.com</a>
                 </div>
             </div>
 
-            <!-- Copyright -->
-            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
-                © <span id="currentYear"></span> Joan Mutuon
-            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">© <span id="currentYear"></span> Joan
+                Mutuon</div>
         </div>
     </footer>
 
-    <!-- ==========================================
-         JAVASCRIPT
-         ========================================== -->
+    <script>
+        // Simple mobile menu toggle (léger)
+        document.getElementById('navToggle')?.addEventListener('click', function () {
+            const list = document.getElementById('navListMobile');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            list.classList.toggle('hidden');
+        });
+
+        // Insère l'année courante
+        document.getElementById('currentYear') && (document.getElementById('currentYear').textContent = new Date().getFullYear());
+    </script>
+
+    <!-- Optionnel : script principal -->
     <script src="js/script.js"></script>
 </body>
 
