@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En savoir plus sur Joan Mutuon, développeur web passionné. Découvrez mon parcours, mes valeurs et mon approche du développement web.">
+    <meta name="description"
+        content="En savoir plus sur Joan Mutuon, développeur web passionné. Découvrez mon parcours, mes valeurs et mon approche du développement web.">
     <meta name="keywords" content="Joan Mutuon, à propos, parcours, développeur web, valeurs">
     <meta name="author" content="Joan Mutuon">
     <meta name="robots" content="index, follow">
@@ -62,36 +64,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
 
     <!-- Styles personnalisés -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-sans text-gray-800 bg-white antialiased">
     <!-- ==========================================
          NAVIGATION
          ========================================== -->
-    <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
+ <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
             <!-- Logo -->
-            <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150" aria-label="Retour à l'accueil">
+            <a href="index.html"
+                class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
+                aria-label="Retour à l'accueil">
                 Joan Mutuon
             </a>
 
             <!-- Menu hamburger (mobile) -->
-            <button id="navToggle" class="nav-toggle block md:hidden flex-col gap-[5px] p-[5px]" aria-label="Menu de navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="navToggle" class="block md:hidden flex flex-col justify-between w-6 h-6 p-1"
+                aria-label="Menu de navigation" aria-expanded="false">
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
             </button>
 
             <!-- Menu de navigation -->
             <ul id="navList" class="hidden md:flex gap-6">
                 <li>
-                    <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                        aria-current="page">Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">À propos</a>
+                    <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
                 </li>
                 <li>
                     <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
@@ -106,12 +114,15 @@
         </nav>
 
         <!-- Menu mobile -->
-        <ul id="navListMobile" class="md:hidden hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg gap-4">
+        <ul id="navListMobile"
+            class="md:hidden hidden flex flex-col absolute top-full left-0 right-0 bg-white p-4 shadow-lg gap-4">
+
             <li>
-                <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                    aria-current="page">Accueil</a>
             </li>
             <li>
-                <a href="about.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">À propos</a>
+                <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
             </li>
             <li>
                 <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
@@ -143,8 +154,10 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <!-- Image / Avatar placeholder -->
                     <div>
-                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
-                            <div class="aspect-square bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center rounded-lg">
+                        <div
+                            class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                            <div
+                                class="aspect-square bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center rounded-lg">
                                 <span class="text-[5rem] text-white font-bold">JM</span>
                             </div>
                         </div>
@@ -155,15 +168,20 @@
                         <h2 id="presentation-title" class="text-3xl font-bold text-gray-800 mb-8">Qui suis-je ?</h2>
 
                         <p class="text-gray-600 mb-4">
-                            Bonjour ! Je suis <strong>Joan Mutuon</strong>, développeur web passionné avec une volonté constante d'apprendre et de m'améliorer. Je me spécialise dans la création de sites web modernes, performants et accessibles.
+                            Bonjour ! Je suis <strong>Joan Mutuon</strong>, développeur web passionné avec une volonté
+                            constante d'apprendre et de m'améliorer. Je me spécialise dans la création de sites web
+                            modernes, performants et accessibles.
                         </p>
 
                         <p class="text-gray-600 mb-4">
-                            Mon approche du développement web repose sur la simplicité et l'efficacité. Je crois fermement qu'un bon site web doit être à la fois beau, fonctionnel et facile à utiliser pour tous.
+                            Mon approche du développement web repose sur la simplicité et l'efficacité. Je crois
+                            fermement qu'un bon site web doit être à la fois beau, fonctionnel et facile à utiliser pour
+                            tous.
                         </p>
 
                         <p class="text-gray-600 mb-8">
-                            Chaque projet est pour moi une nouvelle opportunité de repousser mes limites et de créer quelque chose d'unique et de mémorable.
+                            Chaque projet est pour moi une nouvelle opportunité de repousser mes limites et de créer
+                            quelque chose d'unique et de mémorable.
                         </p>
 
                         <!-- Valeurs professionnelles -->
@@ -172,53 +190,65 @@
 
                             <div class="flex gap-4 mb-6">
                                 <div class="flex-shrink-0 w-6 h-6 text-teal-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Qualité</h4>
-                                    <p class="text-gray-600 mb-0">Je m'engage à livrer du code propre, maintenable et optimisé, en respectant les meilleures pratiques.</p>
+                                    <p class="text-gray-600 mb-0">Je m'engage à livrer du code propre, maintenable et
+                                        optimisé, en respectant les meilleures pratiques.</p>
                                 </div>
                             </div>
 
                             <div class="flex gap-4 mb-6">
                                 <div class="flex-shrink-0 w-6 h-6 text-teal-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <path d="M12 6v6l4 2"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 6v6l4 2" />
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Réactivité</h4>
-                                    <p class="text-gray-600 mb-0">Je réponds rapidement aux demandes et m'adapte facilement aux changements et aux imprévus.</p>
+                                    <p class="text-gray-600 mb-0">Je réponds rapidement aux demandes et m'adapte
+                                        facilement aux changements et aux imprévus.</p>
                                 </div>
                             </div>
 
                             <div class="flex gap-4 mb-6">
                                 <div class="flex-shrink-0 w-6 h-6 text-teal-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Collaboration</h4>
-                                    <p class="text-gray-600 mb-0">Je valorise la communication transparente et le travail d'équipe pour atteindre les objectifs communs.</p>
+                                    <p class="text-gray-600 mb-0">Je valorise la communication transparente et le
+                                        travail d'équipe pour atteindre les objectifs communs.</p>
                                 </div>
                             </div>
 
                             <div class="flex gap-4">
                                 <div class="flex-shrink-0 w-6 h-6 text-teal-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                                     </svg>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Innovation</h4>
-                                    <p class="text-gray-600 mb-0">Je reste à jour avec les dernières technologies et tendances pour offrir des solutions modernes.</p>
+                                    <p class="text-gray-600 mb-0">Je reste à jour avec les dernières technologies et
+                                        tendances pour offrir des solutions modernes.</p>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +269,8 @@
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800 mb-1">Développeur Web Freelance</h3>
                             <p class="text-gray-600 mb-0">
-                                Création de sites web pour divers clients. Développement de sites vitrines, e-commerce et applications web. Gestion complète des projets de la conception au déploiement.
+                                Création de sites web pour divers clients. Développement de sites vitrines, e-commerce
+                                et applications web. Gestion complète des projets de la conception au déploiement.
                             </p>
                         </div>
                     </article>
@@ -250,7 +281,8 @@
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800 mb-1">Formation Développement Web</h3>
                             <p class="text-gray-600 mb-0">
-                                Formation intensive en développement web. Approfondissement des connaissances en HTML5, CSS3, JavaScript et bonnes pratiques web. Réalisation de nombreux projets pratiques.
+                                Formation intensive en développement web. Approfondissement des connaissances en HTML5,
+                                CSS3, JavaScript et bonnes pratiques web. Réalisation de nombreux projets pratiques.
                             </p>
                         </div>
                     </article>
@@ -261,7 +293,8 @@
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800 mb-1">Premiers pas dans le développement</h3>
                             <p class="text-gray-600 mb-0">
-                                Découverte du développement web et auto-formation. Création de premiers projets personnels et apprentissage des bases du HTML et CSS.
+                                Découverte du développement web et auto-formation. Création de premiers projets
+                                personnels et apprentissage des bases du HTML et CSS.
                             </p>
                         </div>
                     </article>
@@ -272,7 +305,8 @@
                         <div class="flex-1">
                             <h3 class="font-semibold text-gray-800 mb-1">Apprentissage continu</h3>
                             <p class="text-gray-600 mb-0">
-                                Veille technologique constante, participation à la communauté des développeurs, et amélioration continue de mes compétences.
+                                Veille technologique constante, participation à la communauté des développeurs, et
+                                amélioration continue de mes compétences.
                             </p>
                         </div>
                     </article>
@@ -285,13 +319,16 @@
             <div class="container mx-auto px-4 max-w-[1200px]">
                 <h2 class="text-3xl font-bold text-gray-800 mb-8">Intéressé par mon profil ?</h2>
                 <p class="text-gray-600 mb-8">
-                    N'hésitez pas à consulter mes compétences ou à me contacter directement pour discuter de votre projet.
+                    N'hésitez pas à consulter mes compétences ou à me contacter directement pour discuter de votre
+                    projet.
                 </p>
                 <div class="inline-flex gap-4 flex-wrap justify-center">
-                    <a href="skills.html" class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                    <a href="skills.html"
+                        class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                         Mes compétences
                     </a>
-                    <a href="contact.html" class="px-6 py-2 bg-transparent text-gray-800 font-medium rounded-lg border-2 border-gray-800 hover:bg-gray-800 hover:text-white hover:-translate-y-0.5 transition-all duration-300">
+                    <a href="contact.html"
+                        class="px-6 py-2 bg-transparent text-gray-800 font-medium rounded-lg border-2 border-gray-800 hover:bg-gray-800 hover:text-white hover:-translate-y-0.5 transition-all duration-300">
                         Me contacter
                     </a>
                 </div>
@@ -302,41 +339,35 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="container mx-auto px-4 max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- Colonne 1: Informations -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
-                    <p class="text-gray-400">
-                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
-                    </p>
+    <footer class="bg-gray-900 text-gray-400 mt-auto">
+        <div class="max-w-[1200px] mx-auto px-4 py-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <!-- Identité -->
+                <div class="text-center md:text-left">
+                    <p class="text-white font-semibold">Joan Mutuon</p>
+                    <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Colonne 2: Navigation -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="index.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
-                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À propos</a>
-                        <a href="skills.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
-                        <a href="projects.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
-                    </nav>
-                </div>
+                <!-- Navigation -->
+                <nav class="flex justify-center gap-4 text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
+                    <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
+                    <a href="projects.html" class="hover:text-teal-500 transition">Projets</a>
+                    <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
+                </nav>
 
-                <!-- Colonne 3: Contact -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="mailto:contact@joanmutuon.com" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de contact</a>
-                    </nav>
+                <!-- Contact -->
+                <div class="text-center md:text-right text-sm">
+                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
+                        contact@joanmutuon.com
+                    </a>
                 </div>
             </div>
 
-            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
-                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            <!-- Copyright -->
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+                © <span id="currentYear"></span> Joan Mutuon
             </div>
         </div>
     </footer>
@@ -346,4 +377,5 @@
          ========================================== -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

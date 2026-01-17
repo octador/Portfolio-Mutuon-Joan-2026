@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez Joan Mutuon, développeur web, via le formulaire de contact ou par email pour discuter de votre projet.">
+    <meta name="description"
+        content="Contactez Joan Mutuon, développeur web, via le formulaire de contact ou par email pour discuter de votre projet.">
     <meta name="keywords" content="Joan Mutuon, contact, formulaire, email, projet web">
     <meta name="author" content="Joan Mutuon">
     <meta name="robots" content="index, follow">
@@ -62,11 +64,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
 
     <!-- Styles personnalisés -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-sans text-gray-800 bg-white antialiased">
     <!-- ==========================================
          NAVIGATION
@@ -74,21 +78,25 @@
     <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
             <!-- Logo -->
-            <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150" aria-label="Retour à l'accueil">
+            <a href="index.html"
+                class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
+                aria-label="Retour à l'accueil">
                 Joan Mutuon
             </a>
 
             <!-- Menu hamburger (mobile) -->
-            <button id="navToggle" class="nav-toggle block md:hidden flex-col gap-[5px] p-[5px]" aria-label="Menu de navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="navToggle" class="block md:hidden flex flex-col justify-between w-6 h-6 p-1"
+                aria-label="Menu de navigation" aria-expanded="false">
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
             </button>
 
             <!-- Menu de navigation -->
             <ul id="navList" class="hidden md:flex gap-6">
                 <li>
-                    <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                        aria-current="page">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
@@ -100,15 +108,18 @@
                     <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Contact</a>
+                    <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Menu mobile -->
-        <ul id="navListMobile" class="md:hidden hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg gap-4">
+        <ul id="navListMobile"
+            class="md:hidden hidden flex flex-col absolute top-full left-0 right-0 bg-white p-4 shadow-lg gap-4">
+
             <li>
-                <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                    aria-current="page">Accueil</a>
             </li>
             <li>
                 <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
@@ -120,7 +131,7 @@
                 <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
             </li>
             <li>
-                <a href="contact.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Contact</a>
+                <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
             </li>
         </ul>
     </header>
@@ -140,16 +151,19 @@
         <!-- Section Formulaire -->
         <section aria-labelledby="contact-title" class="py-16">
             <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="contact-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Envoyez-moi un message</h2>
+                <h2 id="contact-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Envoyez-moi un message
+                </h2>
 
                 <!-- Message de succès -->
-                <div class="hidden p-4 rounded-lg mb-4 bg-green-100 text-green-600 border border-green-500 animate-slide-down" id="successMessage" role="alert">
+                <div class="hidden p-4 rounded-lg mb-4 bg-green-100 text-green-600 border border-green-500 animate-slide-down"
+                    id="successMessage" role="alert">
                     <strong>Message envoyé avec succès !</strong>
                     <p>Je vous répondrai dans les plus brefs délais.</p>
                 </div>
 
                 <!-- Message d'erreur -->
-                <div class="hidden p-4 rounded-lg mb-4 bg-red-100 text-red-500 border border-red-500 animate-slide-down" id="errorMessage" role="alert">
+                <div class="hidden p-4 rounded-lg mb-4 bg-red-100 text-red-500 border border-red-500 animate-slide-down"
+                    id="errorMessage" role="alert">
                     <strong>Une erreur s'est produite.</strong>
                     <p>Veuillez vérifier vos informations et réessayer.</p>
                 </div>
@@ -159,70 +173,50 @@
                     <!-- Champ Nom -->
                     <div class="mb-6">
                         <label for="name" class="block mb-2 font-medium text-gray-800">Nom complet *</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
+                        <input type="text" id="name" name="name"
                             class="form-input w-full px-4 py-2 text-base border-2 border-gray-100 rounded-lg focus:outline-none focus:border-teal-500 focus:shadow-[0_0_0_3px_rgba(56,178,172,0.1)] transition-all duration-150"
-                            placeholder="Votre nom"
-                            required
-                            aria-required="true"
-                            aria-describedby="nameError"
-                        >
-                        <span class="form-error hidden text-red-500 text-sm mt-2" id="nameError">Veuillez entrer votre nom.</span>
+                            placeholder="Votre nom" required aria-required="true" aria-describedby="nameError">
+                        <span class="form-error hidden text-red-500 text-sm mt-2" id="nameError">Veuillez entrer votre
+                            nom.</span>
                     </div>
 
                     <!-- Champ Email -->
                     <div class="mb-6">
                         <label for="email" class="block mb-2 font-medium text-gray-800">Adresse email *</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
+                        <input type="email" id="email" name="email"
                             class="form-input w-full px-4 py-2 text-base border-2 border-gray-100 rounded-lg focus:outline-none focus:border-teal-500 focus:shadow-[0_0_0_3px_rgba(56,178,172,0.1)] transition-all duration-150"
-                            placeholder="votre@email.com"
-                            required
-                            aria-required="true"
-                            aria-describedby="emailError"
-                        >
-                        <span class="form-error hidden text-red-500 text-sm mt-2" id="emailError">Veuillez entrer une adresse email valide.</span>
+                            placeholder="votre@email.com" required aria-required="true" aria-describedby="emailError">
+                        <span class="form-error hidden text-red-500 text-sm mt-2" id="emailError">Veuillez entrer une
+                            adresse email valide.</span>
                     </div>
 
                     <!-- Champ Sujet -->
                     <div class="mb-6">
                         <label for="subject" class="block mb-2 font-medium text-gray-800">Sujet *</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
+                        <input type="text" id="subject" name="subject"
                             class="form-input w-full px-4 py-2 text-base border-2 border-gray-100 rounded-lg focus:outline-none focus:border-teal-500 focus:shadow-[0_0_0_3px_rgba(56,178,172,0.1)] transition-all duration-150"
-                            placeholder="Sujet de votre message"
-                            required
-                            aria-required="true"
-                            aria-describedby="subjectError"
-                        >
-                        <span class="form-error hidden text-red-500 text-sm mt-2" id="subjectError">Veuillez entrer un sujet.</span>
+                            placeholder="Sujet de votre message" required aria-required="true"
+                            aria-describedby="subjectError">
+                        <span class="form-error hidden text-red-500 text-sm mt-2" id="subjectError">Veuillez entrer un
+                            sujet.</span>
                     </div>
 
                     <!-- Champ Message -->
                     <div class="mb-6">
                         <label for="message" class="block mb-2 font-medium text-gray-800">Message *</label>
-                        <textarea
-                            id="message"
-                            name="message"
+                        <textarea id="message" name="message"
                             class="form-textarea w-full px-4 py-2 text-base border-2 border-gray-100 rounded-lg min-h-[150px] focus:outline-none focus:border-teal-500 focus:shadow-[0_0_0_3px_rgba(56,178,172,0.1)] transition-all duration-150 resize-y"
-                            placeholder="Votre message..."
-                            required
-                            aria-required="true"
-                            aria-describedby="messageError"
-                            rows="6"
-                        ></textarea>
-                        <span class="form-error hidden text-red-500 text-sm mt-2" id="messageError">Veuillez entrer votre message (minimum 10 caractères).</span>
+                            placeholder="Votre message..." required aria-required="true" aria-describedby="messageError"
+                            rows="6"></textarea>
+                        <span class="form-error hidden text-red-500 text-sm mt-2" id="messageError">Veuillez entrer
+                            votre message (minimum 10 caractères).</span>
                     </div>
 
                     <!-- Bouton de soumission -->
                     <div class="text-center">
-                        <button type="submit" class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300" id="submitBtn">
+                        <button type="submit"
+                            class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+                            id="submitBtn">
                             Envoyer le message
                         </button>
                     </div>
@@ -233,16 +227,21 @@
         <!-- Section Informations de contact -->
         <section aria-labelledby="info-title" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="info-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Autres moyens de me contacter</h2>
+                <h2 id="info-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Autres moyens de me
+                    contacter</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Email -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
                                 </svg>
                                 Email
                             </h3>
@@ -256,17 +255,22 @@
                     </article>
 
                     <!-- Réseaux sociaux -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </h3>
                         </div>
                         <p class="text-gray-600 text-center mb-4">
-                            <a href="https://github.com/joanmutuon" target="_blank" rel="noopener noreferrer" class="text-teal-500">github.com/joanmutuon</a>
+                            <a href="https://github.com/joanmutuon" target="_blank" rel="noopener noreferrer"
+                                class="text-teal-500">github.com/joanmutuon</a>
                         </p>
                         <p class="text-gray-600 text-center">
                             Découvrez mes projets sur GitHub.
@@ -274,12 +278,15 @@
                     </article>
 
                     <!-- Localisation -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-teal-500 block mx-auto mb-4">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
                                 </svg>
                                 Localisation
                             </h3>
@@ -299,41 +306,35 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="container mx-auto px-4 max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- Colonne 1: Informations -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
-                    <p class="text-gray-400">
-                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
-                    </p>
+    <footer class="bg-gray-900 text-gray-400 mt-auto">
+        <div class="max-w-[1200px] mx-auto px-4 py-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <!-- Identité -->
+                <div class="text-center md:text-left">
+                    <p class="text-white font-semibold">Joan Mutuon</p>
+                    <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Colonne 2: Navigation -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="index.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
-                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À propos</a>
-                        <a href="skills.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
-                        <a href="projects.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
-                    </nav>
-                </div>
+                <!-- Navigation -->
+                <nav class="flex justify-center gap-4 text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
+                    <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
+                    <a href="projects.html" class="hover:text-teal-500 transition">Projets</a>
+                    <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
+                </nav>
 
-                <!-- Colonne 3: Contact -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="mailto:contact@joanmutuon.com" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de contact</a>
-                    </nav>
+                <!-- Contact -->
+                <div class="text-center md:text-right text-sm">
+                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
+                        contact@joanmutuon.com
+                    </a>
                 </div>
             </div>
 
-            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
-                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            <!-- Copyright -->
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+                © <span id="currentYear"></span> Joan Mutuon
             </div>
         </div>
     </footer>
@@ -343,4 +344,5 @@
          ========================================== -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

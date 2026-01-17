@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les compétences techniques de Joan Mutuon : HTML, CSS, JavaScript, responsive design et bonnes pratiques web.">
+    <meta name="description"
+        content="Découvrez les compétences techniques de Joan Mutuon : HTML, CSS, JavaScript, responsive design et bonnes pratiques web.">
     <meta name="keywords" content="Joan Mutuon, compétences, HTML, CSS, JavaScript, responsive design, web">
     <meta name="author" content="Joan Mutuon">
     <meta name="robots" content="index, follow">
@@ -62,11 +64,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
 
     <!-- Styles personnalisés -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-sans text-gray-800 bg-white antialiased">
     <!-- ==========================================
          NAVIGATION
@@ -74,27 +78,31 @@
     <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
             <!-- Logo -->
-            <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150" aria-label="Retour à l'accueil">
+            <a href="index.html"
+                class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
+                aria-label="Retour à l'accueil">
                 Joan Mutuon
             </a>
 
             <!-- Menu hamburger (mobile) -->
-            <button id="navToggle" class="nav-toggle block md:hidden flex-col gap-[5px] p-[5px]" aria-label="Menu de navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="navToggle" class="block md:hidden flex flex-col justify-between w-6 h-6 p-1"
+                aria-label="Menu de navigation" aria-expanded="false">
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
             </button>
 
             <!-- Menu de navigation -->
             <ul id="navList" class="hidden md:flex gap-6">
                 <li>
-                    <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                        aria-current="page">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
                 </li>
                 <li>
-                    <a href="skills.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Compétences</a>
+                    <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
                 </li>
                 <li>
                     <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
@@ -106,15 +114,18 @@
         </nav>
 
         <!-- Menu mobile -->
-        <ul id="navListMobile" class="md:hidden hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg gap-4">
+        <ul id="navListMobile"
+            class="md:hidden hidden flex flex-col absolute top-full left-0 right-0 bg-white p-4 shadow-lg gap-4">
+
             <li>
-                <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                    aria-current="page">Accueil</a>
             </li>
             <li>
                 <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
             </li>
             <li>
-                <a href="skills.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Compétences</a>
+                <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
             </li>
             <li>
                 <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
@@ -144,7 +155,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Skill bar 1 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Structure sémantique</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
@@ -153,7 +165,8 @@
                     </article>
 
                     <!-- Skill bar 2 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Accessibilité (ARIA, WCAG)</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
@@ -162,7 +175,8 @@
                     </article>
 
                     <!-- Skill bar 3 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Formulaires avancés</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="80"></div>
@@ -171,7 +185,8 @@
                     </article>
 
                     <!-- Skill bar 4 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">SEO (SEO on-page)</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="75"></div>
@@ -189,7 +204,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Skill bar 1 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Flexbox & Grid</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
@@ -198,7 +214,8 @@
                     </article>
 
                     <!-- Skill bar 2 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Animations & Transitions</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
@@ -207,7 +224,8 @@
                     </article>
 
                     <!-- Skill bar 3 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Responsive Design (Media Queries)</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="95"></div>
@@ -216,7 +234,8 @@
                     </article>
 
                     <!-- Skill bar 4 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">CSS Variables & Modern CSS</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
@@ -234,7 +253,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Skill bar 1 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">JavaScript moderne (ES6+)</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
@@ -243,7 +263,8 @@
                     </article>
 
                     <!-- Skill bar 2 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Manipulation du DOM</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="90"></div>
@@ -252,7 +273,8 @@
                     </article>
 
                     <!-- Skill bar 3 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Fetch API & Promises</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="75"></div>
@@ -261,7 +283,8 @@
                     </article>
 
                     <!-- Skill bar 4 -->
-                    <article class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
+                    <article
+                        class="skill bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100 flex flex-col gap-2">
                         <h3 class="font-medium text-gray-800">Validation de formulaires</h3>
                         <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
                             <div class="skill-progress h-full rounded-full" style="width: 0%;" data-width="85"></div>
@@ -275,45 +298,57 @@
         <!-- Section Compétences supplémentaires -->
         <section aria-labelledby="additional-title" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4 max-w-[1200px]">
-                <h2 id="additional-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Autres compétences</h2>
+                <h2 id="additional-title" class="text-center text-3xl font-bold text-gray-800 mb-12">Autres compétences
+                </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Carte 1 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Responsive Design
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Conception d'interfaces adaptées à tous les écrans, du mobile au desktop, avec une attention particulière à l'expérience utilisateur.
+                            Conception d'interfaces adaptées à tous les écrans, du mobile au desktop, avec une attention
+                            particulière à l'expérience utilisateur.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Mobile-first</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Breakpoints</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Touch-friendly</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Mobile-first</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Breakpoints</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Touch-friendly</span>
                         </div>
                     </article>
 
                     <!-- Carte 2 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Bonnes Pratiques Web
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Respect des standards du web, optimisation des performances et accessibilité pour tous les utilisateurs.
+                            Respect des standards du web, optimisation des performances et accessibilité pour tous les
+                            utilisateurs.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">WCAG</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Sémantique</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Performance</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">WCAG</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Sémantique</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Performance</span>
                         </div>
                     </article>
 
                     <!-- Carte 3 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Outils de Développement
@@ -323,9 +358,13 @@
                             Utilisation des outils modernes pour un développement efficace et professionnel.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Git</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">VS Code</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">DevTools</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Git</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">VS
+                                Code</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">DevTools</span>
                         </div>
                     </article>
                 </div>
@@ -339,7 +378,8 @@
                 <p class="text-gray-600 mb-8">
                     Mettons mes compétences au service de votre projet web. N'hésitez pas à me contacter !
                 </p>
-                <a href="contact.html" class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                <a href="contact.html"
+                    class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                     Discutons de votre projet
                 </a>
             </div>
@@ -349,41 +389,35 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="container mx-auto px-4 max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- Colonne 1: Informations -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
-                    <p class="text-gray-400">
-                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
-                    </p>
+    <footer class="bg-gray-900 text-gray-400 mt-auto">
+        <div class="max-w-[1200px] mx-auto px-4 py-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <!-- Identité -->
+                <div class="text-center md:text-left">
+                    <p class="text-white font-semibold">Joan Mutuon</p>
+                    <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Colonne 2: Navigation -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="index.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
-                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À propos</a>
-                        <a href="skills.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
-                        <a href="projects.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
-                    </nav>
-                </div>
+                <!-- Navigation -->
+                <nav class="flex justify-center gap-4 text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
+                    <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
+                    <a href="projects.html" class="hover:text-teal-500 transition">Projets</a>
+                    <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
+                </nav>
 
-                <!-- Colonne 3: Contact -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="mailto:contact@joanmutuon.com" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de contact</a>
-                    </nav>
+                <!-- Contact -->
+                <div class="text-center md:text-right text-sm">
+                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
+                        contact@joanmutuon.com
+                    </a>
                 </div>
             </div>
 
-            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
-                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            <!-- Copyright -->
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+                © <span id="currentYear"></span> Joan Mutuon
             </div>
         </div>
     </footer>
@@ -393,4 +427,5 @@
          ========================================== -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

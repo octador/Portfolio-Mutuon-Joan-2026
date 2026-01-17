@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les projets de Joan Mutuon : e-commerce, dashboard analytics, portfolio personnel, blog moderne et plus encore.">
+    <meta name="description"
+        content="Découvrez les projets de Joan Mutuon : e-commerce, dashboard analytics, portfolio personnel, blog moderne et plus encore.">
     <meta name="keywords" content="Joan Mutuon, projets, portfolio, e-commerce, dashboard, web development">
     <meta name="author" content="Joan Mutuon">
     <meta name="robots" content="index, follow">
@@ -62,11 +64,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JM</text></svg>">
 
     <!-- Styles personnalisés -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-sans text-gray-800 bg-white antialiased">
     <!-- ==========================================
          NAVIGATION
@@ -74,21 +78,25 @@
     <header id="header" class="sticky top-0 z-50 bg-white shadow-sm transition-shadow duration-300">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1200px]">
             <!-- Logo -->
-            <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150" aria-label="Retour à l'accueil">
+            <a href="index.html"
+                class="text-xl font-bold text-gray-800 hover:text-teal-500 transition-colors duration-150"
+                aria-label="Retour à l'accueil">
                 Joan Mutuon
             </a>
 
             <!-- Menu hamburger (mobile) -->
-            <button id="navToggle" class="nav-toggle block md:hidden flex-col gap-[5px] p-[5px]" aria-label="Menu de navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="navToggle" class="block md:hidden flex flex-col justify-between w-6 h-6 p-1"
+                aria-label="Menu de navigation" aria-expanded="false">
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
+                <span class="block h-0.5 w-full bg-gray-800"></span>
             </button>
 
             <!-- Menu de navigation -->
             <ul id="navList" class="hidden md:flex gap-6">
                 <li>
-                    <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                    <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                        aria-current="page">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
@@ -97,7 +105,7 @@
                     <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
                 </li>
                 <li>
-                    <a href="projects.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Projets</a>
+                    <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
@@ -106,9 +114,12 @@
         </nav>
 
         <!-- Menu mobile -->
-        <ul id="navListMobile" class="md:hidden hidden absolute top-full left-0 right-0 bg-white flex-col p-4 shadow-lg gap-4">
+        <ul id="navListMobile"
+            class="md:hidden hidden flex flex-col absolute top-full left-0 right-0 bg-white p-4 shadow-lg gap-4">
+
             <li>
-                <a href="index.html" class="nav-link text-gray-800 font-medium">Accueil</a>
+                <a href="index.html" class="nav-link nav-link-active text-gray-800 font-medium"
+                    aria-current="page">Accueil</a>
             </li>
             <li>
                 <a href="about.html" class="nav-link text-gray-800 font-medium">À propos</a>
@@ -117,7 +128,7 @@
                 <a href="skills.html" class="nav-link text-gray-800 font-medium">Compétences</a>
             </li>
             <li>
-                <a href="projects.html" class="nav-link nav-link-active text-gray-800 font-medium" aria-current="page">Projets</a>
+                <a href="projects.html" class="nav-link text-gray-800 font-medium">Projets</a>
             </li>
             <li>
                 <a href="contact.html" class="nav-link text-gray-800 font-medium">Contact</a>
@@ -144,174 +155,259 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Projet 1 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 E-commerce Moderne
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Site e-commerce complet avec panier dynamique, système de filtrage des produits, et interface utilisateur intuitive. Le site est entièrement responsive et optimisé pour une expérience d'achat fluide.
+                            Site e-commerce complet avec panier dynamique, système de filtrage des produits, et
+                            interface utilisateur intuitive. Le site est entièrement responsive et optimisé pour une
+                            expérience d'achat fluide.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">HTML5</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">HTML5</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/ecommerce-demo" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/ecommerce-demo" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
                     </article>
 
                     <!-- Projet 2 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Dashboard Analytics
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Tableau de bord interactif permettant de visualiser des données statistiques avec graphiques dynamiques, filtres personnalisables et une interface responsive adaptée aux différents écrans.
+                            Tableau de bord interactif permettant de visualiser des données statistiques avec graphiques
+                            dynamiques, filtres personnalisables et une interface responsive adaptée aux différents
+                            écrans.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS Grid</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">API</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">JSON</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS
+                                Grid</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">API</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">JSON</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/dashboard-analytics" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/dashboard-analytics" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
                     </article>
 
                     <!-- Projet 3 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Portfolio Personnel
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Site portfolio professionnel mettant en valeur mes compétences et mes projets. Design moderne, navigation fluide et animations subtiles pour une expérience utilisateur agréable.
+                            Site portfolio professionnel mettant en valeur mes compétences et mes projets. Design
+                            moderne, navigation fluide et animations subtiles pour une expérience utilisateur agréable.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">HTML5</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Flexbox</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">Responsive</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">HTML5</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Flexbox</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">Responsive</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/portfolio" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/portfolio" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
                     </article>
 
                     <!-- Projet 4 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Blog Moderne
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Plateforme de blog avec système de publication d'articles, catégories, recherche en temps réel et interface de lecture optimisée pour le confort des lecteurs.
+                            Plateforme de blog avec système de publication d'articles, catégories, recherche en temps
+                            réel et interface de lecture optimisée pour le confort des lecteurs.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Fetch API</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS Grid</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Fetch
+                                API</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS
+                                Grid</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/blog-moderne" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/blog-moderne" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
                     </article>
 
                     <!-- Projet 5 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Task Manager
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Application de gestion de tâches avec fonctionnalités de création, modification, suppression et filtrage. Sauvegarde locale des données et interface intuitive.
+                            Application de gestion de tâches avec fonctionnalités de création, modification, suppression
+                            et filtrage. Sauvegarde locale des données et interface intuitive.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript ES6</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">DOM</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript
+                                ES6</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">DOM</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">CSS3</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">LocalStorage</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/task-manager" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/task-manager" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
                     </article>
 
                     <!-- Projet 6 -->
-                    <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+                    <article
+                        class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
                         <div class="mb-4">
                             <h3 class="text-xl font-semibold text-gray-800">
                                 Weather App
                             </h3>
                         </div>
                         <p class="text-gray-600 leading-relaxed mb-4">
-                            Application météo en temps réel avec recherche de ville, prévisions sur plusieurs jours et interface dynamique. Utilisation d'API externe pour les données météorologiques.
+                            Application météo en temps réel avec recherche de ville, prévisions sur plusieurs jours et
+                            interface dynamique. Utilisation d'API externe pour les données météorologiques.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Fetch API</span>
-                            <span class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Async/Await</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">API REST</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Fetch
+                                API</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 text-white text-sm font-medium rounded-full hover:scale-105 transition-transform">Async/Await</span>
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full hover:scale-105 transition-transform">API
+                                REST</span>
                         </div>
                         <div class="flex gap-2 mt-6 pt-6 border-t border-gray-100 flex-wrap">
-                            <a href="https://github.com/joanmutuon/weather-app" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2" aria-label="Voir le code sur GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            <a href="https://github.com/joanmutuon/weather-app" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2 bg-transparent text-teal-500 font-medium rounded-lg border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+                                aria-label="Voir le code sur GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                                 </svg>
                                 GitHub
                             </a>
-                            <a href="#" class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                            <a href="#"
+                                class="px-4 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                                 Voir la démo
                             </a>
                         </div>
@@ -325,9 +421,11 @@
             <div class="container mx-auto px-4 max-w-[1200px]">
                 <h2 class="text-3xl font-bold text-gray-800 mb-8">Vous avez un projet en tête ?</h2>
                 <p class="text-gray-600 mb-8">
-                    Je serais ravi de mettre mes compétences au service de votre projet. Contactez-moi pour en discuter !
+                    Je serais ravi de mettre mes compétences au service de votre projet. Contactez-moi pour en discuter
+                    !
                 </p>
-                <a href="contact.html" class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+                <a href="contact.html"
+                    class="px-6 py-2 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
                     Démarrer un projet
                 </a>
             </div>
@@ -337,41 +435,35 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="container mx-auto px-4 max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- Colonne 1: Informations -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
-                    <p class="text-gray-400">
-                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
-                    </p>
+    <footer class="bg-gray-900 text-gray-400 mt-auto">
+        <div class="max-w-[1200px] mx-auto px-4 py-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <!-- Identité -->
+                <div class="text-center md:text-left">
+                    <p class="text-white font-semibold">Joan Mutuon</p>
+                    <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Colonne 2: Navigation -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="index.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
-                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À propos</a>
-                        <a href="skills.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
-                        <a href="projects.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
-                    </nav>
-                </div>
+                <!-- Navigation -->
+                <nav class="flex justify-center gap-4 text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
+                    <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
+                    <a href="projects.html" class="hover:text-teal-500 transition">Projets</a>
+                    <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
+                </nav>
 
-                <!-- Colonne 3: Contact -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="mailto:contact@joanmutuon.com" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
-                        <a href="contact.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de contact</a>
-                    </nav>
+                <!-- Contact -->
+                <div class="text-center md:text-right text-sm">
+                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
+                        contact@joanmutuon.com
+                    </a>
                 </div>
             </div>
 
-            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
-                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            <!-- Copyright -->
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+                © <span id="currentYear"></span> Joan Mutuon
             </div>
         </div>
     </footer>
@@ -381,4 +473,5 @@
          ========================================== -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

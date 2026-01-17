@@ -304,52 +304,39 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="container mx-auto px-4 max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- Colonne 1: Informations -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Joan Mutuon</h3>
-                    <p class="text-gray-400">
-                        Développeur Web passionné, spécialisé dans la création de sites web modernes et performants.
-                    </p>
+    <footer class="bg-gray-900 text-gray-400 mt-auto">
+        <div class="max-w-[1200px] mx-auto px-4 py-8">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+
+                <!-- Identité -->
+                <div class="text-center md:text-left">
+                    <p class="text-white font-semibold">Joan Mutuon</p>
+                    <p class="text-sm">Développeur Web</p>
                 </div>
 
-                <!-- Colonne 2: Navigation -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Navigation</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="index.html"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Accueil</a>
-                        <a href="about.html" class="text-gray-400 hover:text-teal-500 transition-colors duration-150">À
-                            propos</a>
-                        <a href="skills.html"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Compétences</a>
-                        <a href="projects.html"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Projets</a>
-                        <a href="contact.html"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Contact</a>
-                    </nav>
-                </div>
+                <!-- Navigation -->
+                <nav class="flex justify-center gap-4 text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-teal-500 transition">Accueil</a>
+                    <a href="about.html" class="hover:text-teal-500 transition">À propos</a>
+                    <a href="projects.html" class="hover:text-teal-500 transition">Projets</a>
+                    <a href="contact.html" class="hover:text-teal-500 transition">Contact</a>
+                </nav>
 
-                <!-- Colonne 3: Contact -->
-                <div>
-                    <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-                    <nav class="flex flex-col gap-2">
-                        <a href="mailto:contact@joanmutuon.com"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">contact@joanmutuon.com</a>
-                        <a href="contact.html"
-                            class="text-gray-400 hover:text-teal-500 transition-colors duration-150">Formulaire de
-                            contact</a>
-                    </nav>
+                <!-- Contact -->
+                <div class="text-center md:text-right text-sm">
+                    <a href="mailto:contact@joanmutuon.com" class="hover:text-teal-500 transition">
+                        contact@joanmutuon.com
+                    </a>
                 </div>
             </div>
 
-            <div class="text-center pt-8 border-t border-gray-700 text-gray-400">
-                <p>&copy; <span id="currentYear"></span> Joan Mutuon. Tous droits réservés.</p>
+            <!-- Copyright -->
+            <div class="mt-6 pt-4 border-t border-gray-700 text-center text-xs">
+                © <span id="currentYear"></span> Joan Mutuon
             </div>
         </div>
     </footer>
+
 
     <!-- ==========================================
          JAVASCRIPT
